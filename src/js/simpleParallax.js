@@ -1,7 +1,7 @@
 import {gsap} from "gsap";
 
 export const SimpleParallax = () => {
-  gsap.utils.toArray("section").forEach((section, i) => {
+  gsap.utils.toArray("section.parallax").forEach((section, i) => {
     section.bg = section.querySelector(".bg");
 
     // Give the backgrounds some random images
@@ -9,6 +9,7 @@ export const SimpleParallax = () => {
 
     // Do the parallax effect on each section
     if (i) {
+      console.log(section)
       section.bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
 
       gsap.to(section.bg, {
