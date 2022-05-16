@@ -5,7 +5,7 @@ export const SimpleParallax = () => {
     section.bg = section.querySelector(".bg");
 
     // Give the backgrounds some random images
-    section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
+    //section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
 
     // Do the parallax effect on each section
     if (i) {
