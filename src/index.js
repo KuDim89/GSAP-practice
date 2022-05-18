@@ -5,6 +5,8 @@ import './styles/styles.scss'
 import {SimpleParallax} from "@/js/simpleParallax";
 import {HoverWithImg} from "@/js/hoverWithImg";
 
-gsap.registerPlugin(ScrollTrigger);
-SimpleParallax();
-HoverWithImg();
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+  SimpleParallax();
+  HoverWithImg();
+});

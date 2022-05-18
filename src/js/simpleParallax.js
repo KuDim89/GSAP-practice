@@ -38,4 +38,12 @@ export const SimpleParallax = () => {
       });
     }
   });
+
+  gsap.to(".parallax h1", {
+    xPercent:-50,
+    left:"50%",
+    opacity: 1,
+    ease: 'slow(0.7, 0.7, false)',
+    duration: 2
+  })
 }
