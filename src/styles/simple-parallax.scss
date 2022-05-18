@@ -1,0 +1,34 @@
+.parallax {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) ;
+    text-align: start;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    z-index: 1;
+    font-size: 3em;
+    font-weight: 400;
+    opacity: 0;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../assets/img/simple-parallax.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
